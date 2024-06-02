@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Toggle Rectangles</title>
+  <script src='/static/htmx.min.js'></script>
+  <script src='/static/main.js'></script>
+  <link rel='stylesheet' href='/static/css/main.css'>
+</head>
+<body>
+  <div id='controls-container' class='container'>
+    <button
+      id='submit'
+      class='button'
+      hx-post='/update'
+      hx-trigger='click'
+      hx-vals='js:{primary: ids_by_class("primary"), secondary: ids_by_class("secondary")}'
+      hx-target='#svg-container'
+      hx-swap='innerHTML'>Submit</button>
+  </div>
+  <div id='svg-container' class='container'>{{svg|safe}}</div>
+</body>
+</html>

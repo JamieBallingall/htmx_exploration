@@ -1,0 +1,16 @@
+svg rect {
+  stroke: black;
+  stroke-width: 0.5px;
+}
+svg rect:hover {
+  stroke-width: 2px;
+}
+.primary {
+  fill: #40F74D;
+}
+.secondary {
+  fill: #FAF034;
+}
+.unselected {
+  fill: #DDDDDD;
+}
