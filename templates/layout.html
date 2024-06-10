@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Layout with UI Controls and SVG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .container {
+            display: flex;
+        }
+        .controls {
+            flex: 1;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .svg-container {
+            flex: 3;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <!-- Controls Section -->
+            <div class="controls">
+                <div class="field">
+                    <label class="label">Button 1</label>
+                    <div class="control">
+                        <button class="button is-primary">Primary Button</button>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Button 2</label>
+                    <div class="control">
+                        <button class="button is-link">Link Button</button>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Select Box 1</label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>Select dropdown</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Select Box 2</label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>Select dropdown</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SVG Section -->
+            <div class="svg-container">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                    <text x="50" y="55" font-size="12" text-anchor="middle" fill="white">SVG Example</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

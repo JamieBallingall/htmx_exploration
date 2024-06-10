@@ -1,16 +1,43 @@
+.container {
+  display: flex;
+}
+.controls {
+  flex: 1;
+  max-width: 300px;
+  margin-right: 20px;
+}
+.svg-container {
+  flex: 3;
+}
+
 svg rect {
-  stroke: black;
-  stroke-width: 0.5px;
+  stroke: #DADADA;
+  stroke-width: 1px;
+  fill: #EEEEEE;
 }
+
 svg rect:hover {
-  stroke-width: 2px;
+  stroke-width: 1px;
+  stroke: #B5B5B5
 }
+
 .primary {
-  fill: #40F74D;
+  stroke: #485FC7 !important;
 }
+
 .secondary {
-  fill: #FAF034;
+  stroke: #485FC7 !important;
+  stroke-dasharray: 4 4 !important;
 }
+
 .unselected {
-  fill: #DDDDDD;
+  stroke: #DDDDDD;
+}
+
+.container {
+  display:inline-block
+}
+
+.dropdown.is-active .dropdown-menu {
+  display: block;
 }

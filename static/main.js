@@ -33,3 +33,11 @@ function ids_by_class(class_name) {
   let ids = Array.from(elements).map(elem => elem.id);
   return ids.join(';');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdown = document.querySelector('.dropdown');
+  const button = dropdown.querySelector('.dropdown-trigger button');
+  button.addEventListener('click', () => {
+    dropdown.classList.toggle('is-active');
+  });
+});
